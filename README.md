@@ -5,15 +5,15 @@
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
+  - [Contributions](#contributions)
   - [License](#license)
 
   ## Description
-  
+
 
 
   ## Installation
-  NODE JS, Inquirer version 8.2.4, NPM
+  NODE JS, Inquirer version 8.2.4, NPM, Jest
 
   ## Usage
 
