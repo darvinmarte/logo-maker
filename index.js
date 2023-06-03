@@ -6,7 +6,8 @@ inquirer
         {
             type: 'input',
             name: 'text',
-            message: 'Enter 3 letters:'
+            message: 'Enter 3 letters:',
+            validate: (input) => input.length <= 3,
         },
         {
             type: 'input',
@@ -27,12 +28,9 @@ inquirer
     ])
     .then((answers) => {
         const logo = answers.logo
-        const logo_img = logo_img.image(logo);
-        logo_img.pipe(fs.createWriteStream('logo.svg'));
-
-        fs.writeFile('logo', logo, (err) => {
+        fs.writeFile('logo.svg', logo, (err) => {
             if (err) throw err;
-            console.log('The file has been saved!');
+            console.log('Generated logo.svg!');
         });
     })
     .catch((error) => {
