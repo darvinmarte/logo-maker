@@ -5,7 +5,6 @@ const SVG = require('./lib/svg')
 
 
 function writeToFile(fileName, answers){
-    console.log('hello')
     fs.writeFile(fileName, answers, (err) => {
         if (err) throw err;
         console.log('Generated logo.svg!');
